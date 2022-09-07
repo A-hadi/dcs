@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteEndToEnd" parallel="tests" verbose="10" thread-count="10">
+    <test name="Test_Device1" verbose="2">
+        <parameter name="deviceName" value="emulator-5554" />
+        <parameter name="platformVersion" value="12" />
+        <classes>
+            <class name="dcs.test.TestCase" />
+        </classes>
+    </test>
+    <test name="Test_Device2" verbose="2">
+        <parameter name="deviceName" value="emulator-5555" />
+        <parameter name="platformVersion" value="12" />
+        <classes>
+            <class name="dcs.test.TestCase" />
+        </classes>
+    </test>
+    <test name="Test_Device3" verbose="2">
+        <parameter name="deviceName" value="emulator-5556" />
+        <parameter name="platformVersion" value="12" />
+        <classes>
+            <class name="dcs.test.TestCase" />
+        </classes>
+    </test>
+    <test name="Test_Device4" verbose="2">
+        <parameter name="deviceName" value="emulator-5557" />
+        <parameter name="platformVersion" value="12" />
+        <classes>
+            <class name="dcs.test.TestCase" />
+        </classes>
+    </test>
+</suite> 
